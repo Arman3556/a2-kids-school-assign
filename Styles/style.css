@@ -1,0 +1,106 @@
+
+.quicksand-primary {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.raleway-secondary {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Shared Styles */
+.flex{
+  display: flex;
+}
+
+body{
+  max-width: calc(100% - 120px);
+}
+
+
+
+/* Navbar styles */
+
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-list{
+  max-width: 387px;
+  text-decoration: none;
+  list-style: none;
+  gap: 32px;
+  font-size: 20px;
+  margin-left: 186px;
+}
+
+.school-icon{
+  align-items: center;
+}
+
+.school{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.icon{
+  height: 62px;
+  width: 62px;
+}
+
+.home-color{
+  color: #FEA301;
+}
+
+.about-color{
+  color: #01ACFD;
+}
+
+.facilities{
+  color: rgba(5, 212, 223, 1);
+}
+
+.admission-color{
+  color: rgba(93, 88, 239, 1);
+}
+
+.contact-btn{
+  width: 197px;
+  height: 50px;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 10px;
+  color: rgba(255, 255, 255, 1);
+  background-color: #FEA301;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 186px;
+
+}
+
+/* Hero Section Designs */
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+
+@media screen and (max-width: 576px) {
+  
+  
+}
