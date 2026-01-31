@@ -1,3 +1,4 @@
+/* Fonts */
 
 .quicksand-primary {
   font-family: "Quicksand", sans-serif;
@@ -12,22 +13,12 @@
   font-style: normal;
 }
 
+
 /* Shared Styles */
 
 .flex{
   display: flex;
 }
-
-body{
-  margin: 0 auto;
-  max-width: calc(100% - 140px);
-}
-
-main {
-  margin: 0 auto;
-  align-items: center;
-}
-
 
 .primary-bg{
   background-image: url(..//assets/bg.png);
@@ -43,42 +34,42 @@ main {
   height: 50px;
   font-size: 20px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
+/* Header Styles */
 
-/* Navbar styles */
+/* Navbar related styles */
 
-nav{
+.navbar{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
 .nav-list{
-  max-width: 387px;
   text-decoration: none;
   list-style: none;
   gap: 32px;
   font-size: 20px;
-  margin-left: 186px;
+  font-weight: 500;
 }
+
 
 .school-icon{
   align-items: center;
+  gap: 11px;
 }
 
 .school{
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-left: 11px;
-}
-
-.icon{
-  height: 62px;
-  width: 62px;
 }
 
 .home-color{
@@ -108,7 +99,6 @@ nav{
   background-color: #FEA301;
   font-size: 20px;
   font-weight: 500;
-  margin-left: 186px;
 }
 
 /* Marquee Styles */
@@ -118,6 +108,7 @@ nav{
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
 #Welcome{
   color: orange;
 }
@@ -125,33 +116,40 @@ nav{
   color: #01ACFD;
 }
 
+.navbar, .hero{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 
 /* Hero Section Designs */
 
 .hero{
   display: flex; 
-  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
+  margin-bottom: 50px;
   gap: 50px;
-  margin-top: 20px;
 }
 
-.hero-content{
-  max-width: 1158px;
-}
 
 .hero-title{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 3.3rem;
   font-weight: 600;
   line-height: 1;
 }
 
 .hero-desc{
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
+}
+
+.hero-content{
+  margin-top: 20px;
+  max-width: 640px;
 }
 
 #empower{
@@ -166,12 +164,6 @@ nav{
 
 /* Curriculum Section */
 
-.standard-curriculum{
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .standard-title{
   margin-top: 60px;
   margin-bottom: 80px;
@@ -183,7 +175,7 @@ nav{
 .curriculums-container{
   display: flex;
   justify-content: center;
-  gap: 38px;
+  gap: 25px;
   align-items: center;
 }
 
@@ -198,27 +190,31 @@ nav{
 }
 
 .curriculum{
-  padding: 46px;
+  padding: 36px;
   border-radius: 20px;
   text-align: center;
-  max-width: 368px;
-  max-height: 486px;
+  width: 288px;
+  height: 306px;
+}
+
+#read1, #read2, #read3{
+  margin-top: 15px;
 }
 
 .cc-1{
-  background-image: linear-gradient(180deg, #DEF5FF 0%, #FFFFFF 100%);
+  background-image: linear-gradient(180deg, #cde5fa 0%, #FFFFFF 100%);
 
   box-shadow: 0px 0px 28px #d9e2e2;
 }
 
 .cc-2{
-  background-image: linear-gradient(180deg, #FFF4DC 0%, #FFFFFF 100%);
+  background-image: linear-gradient(180deg, #faeccf 0%, #FFFFFF 100%);
 
   box-shadow: 0px 0px 28px #d9e2e2;
 }
 
 .cc-3{
-  background-image: linear-gradient(180deg, #EEE1FF 0%, #FFFFFF 100%);
+  background-image: linear-gradient(180deg, #e4d3fa 0%, #FFFFFF 100%);
 
   box-shadow: 0px 10px 28px #d9e2e2;
 }
@@ -249,14 +245,12 @@ nav{
 }
 
 
-
 .arrow-btn{
   display: flex;
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 60px;
   gap: 10px;
-
 }
 
 .arrow-arrow{
@@ -269,7 +263,6 @@ nav{
     padding: 16px 16px;
     border: none;
     border-radius: 50%;
-
 }
 
 
@@ -278,37 +271,45 @@ nav{
 /* Stories Section */
 
 .stories{
-  background-image: linear-gradient(0deg, #ffdc9f 0%, #FFFFFF 100%);
+  background-image: url('..//assets/bg.png'), linear-gradient(0deg, rgba(254, 161, 1, 0.466) 0%, rgba(250, 250, 250, 0.3) 100%);
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
 .stories-title{
   text-align: center;
   font-size: 2.9rem;
   font-weight: 600;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
+
 .stories-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
-  justify-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 100px;
 }
+
+
+/* Square Cards */
 
 .square-cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 20px;
 
 }
 
 .cards-common{
+  width: 290px;
+  height: 301px;
   align-items: center;
   text-align: center;
   border-radius: 16px;
-  background-color: royalblue;
+  background-color: white;
 }
 
 .cards-common > img{
@@ -317,70 +318,265 @@ nav{
   border-top-right-radius: 16px;
 }
 
+.toddler-card{
+  align-items: center;
+  text-align: center;
+  border-radius: 16px;
+  background-color: white;
+  width: 540px;
+  height: 620px;
+}
+
+.toddler-card > img{
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.toddler-card-title{
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.toddler-card-desc{
+  margin: auto;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.card-titles{
+  padding: 20px;
+  margin-top: 0px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 15px;
+}
 
 /* Card Dates */
 
-.toddler-card-btn{
-  width: 174px;
-  height: 47px;
-  background-color: #3CD8E8;
+.image-and-date-1{
+  position: relative;
+}
+
+.image-and-date-1 img{
+  width: 100%;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+.toddler-card-date{
+  position: absolute;
+  bottom: -18px;
+  left: 32px;
+  background: rgba(60, 216, 232, 1) ;
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px 14px;
   border-radius: 47px;
   border: none;
-  text-align: center;
-  color: #FFFFFF;
-  margin-top: -60px;
-  margin-left: -50px;
+}
+
+.card-img-date{
+  position: relative;
+}
+
+.card-img-date img{
+  width: 100%;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-dates{
+  position: absolute;
+  bottom: -18px;
+  left: 32px;
+  color: white;
   font-size: 0.8rem;
+  padding: 10px 14px;
+  border-radius: 47px;
+  border: none;
 }
 
-
-
-
-
-
-
-
-
-#view-more-btn{
-  margin-bottom: 80px;
+#sqdate-1{
+  background-color: rgba(254, 161, 1, 0.979);
 }
 
+#sqdate-2{
+  background-color: rgba(255, 0, 128, 0.986);
+}
 
+#sqdate-3{
+  background-color: rgba(93, 88, 239, 0.966);
+}
 
-
+#sqdate-4{
+  background-color: rgba(60, 216, 232, 1);
+}
 
 
 /* Footer Styles */
 
 footer{
-  background-color: #01ACFD;
-  width: 100%;
-  height: 520px;
+  background-color: rgb(23, 180, 189);
+  margin-bottom: 10px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 130px 200px 140px 130px;
+  gap: 30px;
+  color: whitesmoke;
+  
+}
+
+.footer-links-title{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-links-list, li > a{
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.footer-links-list > li{
+  margin-bottom: 15px;
+}
+
+.img-title-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
 }
 
 .img-title{
   display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  height: 81px;
+}
+.img-title > img{
+  width: 80px;
+  height: 80px;
+} 
+
+.footer-desc{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.footer-contact{
+  margin-bottom: 30px;
 }
 
 
+/* Mobile -- Menu Icon */
 
+.menu-icon {
+  display: none;
+}
 
-.footer-content{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 130px 150px;
+.menu-icon i {
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
 }
 
 
+/* Responsive Designs */
 
 
+/* Mobile Responsive Design */
 
+@media screen and (max-width: 576px) 
+  {
+    .menu-icon{
+      display: block;
+    }
 
+    .nav-items, .contact-container, .school{
+    display: none;
+  }
 
-/* Responsive Design */
-
-
-@media screen and (max-width: 576px) {
+  .navbar {
+    justify-content: space-between;
+  }
+ 
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
   
-  
-}
+  .hero img{
+    width: 100%;
+  }
+
+  .hero-title{
+    font-size: 2rem;
+  }
+
+  .hero-desc{
+    font-size: 0.9rem;
+  }
+
+  .curriculums-container{
+    flex-direction: column;
+    gap: 20px;
+  } 
+
+  .curriculum{
+    width: 92%;
+    height: auto;
+  }
+
+  .arrow-btn{
+      display: none;
+    }
+
+    .stories-container{
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toddler-card{
+      display: none;
+    }
+
+    .square-cards{
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+
+    .cards-common{
+      width: 100%;
+      height: auto;
+    }
+
+    .footer-content{
+      flex-direction: column;
+      text-align: left;
+    }
+
+      .img-title{
+        justify-content: center;
+      }
+
+    }
+
