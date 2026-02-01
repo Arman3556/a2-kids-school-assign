@@ -182,6 +182,7 @@ main{
 .curriculum-title{
   font-size: 0.9rem;
   font-weight: 700;
+  margin-top: 10px;
 }
 .curriculum-desc{
   font-size: 0.7rem;
@@ -193,12 +194,12 @@ main{
   padding: 36px;
   border-radius: 20px;
   text-align: center;
-  width: 288px;
+  width: 290px;
   height: 306px;
 }
 
 #read1, #read2, #read3{
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .cc-1{
@@ -433,10 +434,10 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 130px 200px 140px 130px;
+  padding: 140px;
   gap: 30px;
   color: whitesmoke;
-  
+
 }
 
 .footer-links-title{
@@ -488,6 +489,7 @@ footer{
 
 /* Mobile -- Menu Icon */
 
+
 .menu-icon {
   display: none;
 }
@@ -500,7 +502,6 @@ footer{
 
 
 /* Responsive Designs */
-
 
 /* Mobile Responsive Design */
 
@@ -517,11 +518,18 @@ footer{
   .navbar {
     justify-content: space-between;
   }
+
+  .navbar{
+  border: 1px solid #FEA301;
+  height: 90px;
+  padding: 0 10px;
+}
+
  
   .hero{
     flex-direction: column-reverse;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
   }
   
   .hero img{
@@ -542,7 +550,7 @@ footer{
   } 
 
   .curriculum{
-    width: 92%;
+    width: 80%;
     height: auto;
   }
 
@@ -562,16 +570,28 @@ footer{
     .square-cards{
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
+      gap: 10px;
     }
 
-    .cards-common{
+    .cards-common{     
       width: 100%;
       height: auto;
     }
 
     .footer-content{
       flex-direction: column;
+      align-items: flex-start;
       text-align: left;
+      padding: 20px 10px;
+      gap: 30px;
+      margin: 0 auto;
+    }
+
+    .footer-links-list{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
     }
 
       .img-title{
